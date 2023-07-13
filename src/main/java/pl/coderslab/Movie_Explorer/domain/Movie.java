@@ -10,7 +10,7 @@ public class Movie {
     String backdrop_path;
     int[] genre_ids;
     @Id
-    int id;
+    Integer id;
     String original_language;
     String original_title;
     String overview;
@@ -25,7 +25,7 @@ public class Movie {
     public Movie() {
     }
 
-    public Movie(boolean adult, String backdrop_path, int[] genre_ids, int id, String original_language, String original_title, String overview, double popularity, String poster_path, String release_date, String title, boolean video, double vote_average, int vote_count) {
+    public Movie(boolean adult, String backdrop_path, int[] genre_ids, Integer id, String original_language, String original_title, String overview, double popularity, String poster_path, String release_date, String title, boolean video, double vote_average, int vote_count) {
         this.adult = adult;
         this.backdrop_path = backdrop_path;
         this.genre_ids = genre_ids;
@@ -66,11 +66,11 @@ public class Movie {
         this.genre_ids = genre_ids;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
