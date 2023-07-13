@@ -5,7 +5,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Arrays;
 
-@Document("movies")
 public class Movie {
     boolean adult;
     String backdrop_path;
